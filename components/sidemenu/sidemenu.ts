@@ -9,7 +9,11 @@ import {Component, Input, Output, EventEmitter, ElementRef, OnInit} from 'angula
 export class SideMenuComponent implements OnInit {
   @Input() public data: { [category: string]: any[]};
   @Output() public selected:EventEmitter<any> = new EventEmitter();
+  public element:ElementRef;
   public constructor(element:ElementRef) {
     this.element = element;
+  }
+  public ngOnInit():any {
+    this.selected.emit(undefined);
   }
 }

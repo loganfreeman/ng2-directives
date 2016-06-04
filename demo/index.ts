@@ -2,7 +2,7 @@ import {bootstrap} from 'angular2/platform/browser';
 import {Component} from 'angular2/core';
 import {NgClass} from 'angular2/common';
 
-import {SelectSectionComponent} from './components/select-section';
+import {SidemenuSectionComponent} from './components/sidemenu-section';
 
 let gettingStarted = require('./getting-started.md');
 
@@ -24,7 +24,7 @@ let gettingStarted = require('./getting-started.md');
   <div class="container">
     <section id="getting-started">${gettingStarted}</section>
 
-    <select-section class="col-md-12"></select-section>
+    <sidemenu-section class="col-md-12"></sidemenu-section>
   </div>
 
   <footer class="footer">
@@ -35,7 +35,7 @@ let gettingStarted = require('./getting-started.md');
   `,
   directives: [
     NgClass,
-    SelectSectionComponent
+    SidemenuSectionComponent
   ]
 })
 export class DemoComponent {
