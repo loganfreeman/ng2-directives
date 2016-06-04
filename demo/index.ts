@@ -11,8 +11,8 @@ let gettingStarted = require('./getting-started.md');
   template: `
   <main class="bd-pageheader">
     <div class="container">
-      <h1>ng2-select</h1>
-      <p>Native Angular2 component for Select</p>
+      <h1>ng2-sidemeu</h1>
+      <p>Native Angular2 component for Expandable Sidemenu</p>
       <a class="btn btn-primary" href="https://github.com/valor-software/ng2-select">View on GitHub</a>
       <div class="row">
         <div class="col-lg-1"><iframe src="https://ghbtns.com/github-btn.html?user=valor-software&repo=ng2-select&type=star&count=true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe></div>
