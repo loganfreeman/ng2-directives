@@ -1,6 +1,6 @@
 {
   "name": "ng2-sidemenu",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Angular2 based replacement for expandable side menu",
   "scripts": {
     "flow.install:typings": "./node_modules/.bin/typings install",
