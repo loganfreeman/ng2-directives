@@ -57,8 +57,8 @@ const config = {
       'angular2/core',
       'ts-helpers'
     ],
-    'angular2-select': ['ng2-select'],
-    'angular2-select-demo': 'demo'
+    'angular2-sidemenu': 'ng2-sidemeu',
+    'angular2-sidemenu-demo': 'demo'
   },
 
   output: {

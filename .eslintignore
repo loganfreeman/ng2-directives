@@ -20,9 +20,7 @@ demo-build/
 
 /demo/**/*.js
 /components/**/*.js
-ng2-select.js
+ng2-sidemenu.js
 
 logs/
 bundles/
-
-

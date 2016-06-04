@@ -1,5 +1,5 @@
 {
-  "name": "ng2-select",
+  "name": "ng2-sidemenu",
   "version": "1.0.1-beta.0",
   "description": "Angular2 based replacement for select boxes",
   "scripts": {
@@ -7,8 +7,8 @@
     "flow.compile": "npm run flow.install:typings && npm run flow.compile:common && npm run flow.compile:system ",
     "flow.compile:common": "./node_modules/.bin/tsc",
     "flow.compile:system": "./.config/bundle-system.js",
-    "flow.copy:src": "./node_modules/.bin/cpy ng2-select.ts \"components/*.ts\" ts --parents",
-    "flow.clean": "./node_modules/.bin/del bundles coverage demo-build typings \"components/**/*.+(js|d.ts|js.map)\" dist \"ng2-select.+(js|d.ts|js.map)\"",
+    "flow.copy:src": "./node_modules/.bin/cpy ng2-sidemenu.ts \"components/*.ts\" ts --parents",
+    "flow.clean": "./node_modules/.bin/del bundles coverage demo-build typings \"components/**/*.+(js|d.ts|js.map)\" dist \"ng2-sidemenu.+(js|d.ts|js.map)\"",
     "flow.deploy:gh-pages": "npm run flow.build:prod && ./node_modules/.bin/gh-pages -d demo-build",
     "flow.eslint": "./node_modules/.bin/eslint --ignore-path .eslintignore  --ext js --fix . .config",
     "flow.tslint": "./node_modules/.bin/gulp lint",
@@ -28,8 +28,8 @@
     "version": "npm run flow.changelog && git add -A",
     "postversion": "git push origin development && git push --tags"
   },
-  "main": "ng2-select.js",
-  "typings": "ng2-select.d.ts",
+  "main": "ng2-sidemenu.js",
+  "typings": "ng2-sidemenu.d.ts",
   "keywords": [
     "angular2",
     "select",
@@ -40,12 +40,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/valor-software/ng2-select.git"
+    "url": "git+ssh://git@github.com/loganfreeman/ng2-directives.git"
   },
   "bugs": {
-    "url": "https://github.com/valor-software/ng2-select/issues"
+    "url": "https://github.com/loganfreeman/ng2-directives/issues"
   },
-  "homepage": "https://github.com/valor-software/ng2-select#readme",
+  "homepage": "https://github.com/loganfreeman/ng2-directives#readme",
   "peerDependencies": {
     "angular2": "2.0.0-beta.15"
   },
