@@ -1,7 +1,7 @@
 {
   "name": "ng2-sidemenu",
   "version": "1.0.1-beta.0",
-  "description": "Angular2 based replacement for select boxes",
+  "description": "Angular2 based replacement for expandable side menu",
   "scripts": {
     "flow.install:typings": "./node_modules/.bin/typings install",
     "flow.compile": "npm run flow.install:typings && npm run flow.compile:common && npm run flow.compile:system ",
@@ -109,17 +109,5 @@
     "webpack": "1.13.0",
     "webpack-dev-server": "1.14.1",
     "zone.js": "0.6.12"
-  },
-  "contributors": [
-    {
-      "name": "Vyacheslav Chub",
-      "email": "vyacheslav.chub@valor-software.com",
-      "url": "https://github.com/buchslava"
-    },
-    {
-      "name": "Dmitriy Shekhovtsov",
-      "email": "valorkin@gmail.com",
-      "url": "https://github.com/valorkin"
-    }
-  ]
+  }
 }
