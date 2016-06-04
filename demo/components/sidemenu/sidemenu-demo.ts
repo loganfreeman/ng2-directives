@@ -12,4 +12,47 @@ let template = require('./sidemenu-demo.html');
   directives: [NgClass, CORE_DIRECTIVES, FORM_DIRECTIVES, ButtonCheckbox, SIDEMENU_DIRECTIVES]
 })
 export class SidemenuDemoComponent {
+  public categoryMap: { [category: string]: any[]} = {
+      sorting: [{
+        label: 'insertion',
+        text: 'Insertion Sort'
+      }, {
+        label: 'selection',
+        text: 'Selection Sort'
+      }, {
+        label: 'bubble',
+        text: 'Bubble Sort'
+      }, {
+        label: 'merge',
+        text: 'Merge Sort'
+      }, {
+        label: 'quick',
+        text: 'Quick Sort'
+      }, {
+        label: 'heap',
+        text: 'Heap Sort'
+      }],
+      search: [{
+        label: 'binary search',
+        text: 'Binary Search'
+      }],
+      string: [{
+        label: 'edit distance',
+        text: 'Edit Distance'
+      }, {
+        label: 'suffix array',
+        text: 'Suffix Array'
+      }],
+      greey: [{
+        label: 'job scheduling',
+        text: 'Job Scheduling'
+      }],
+      graph: [{
+        label: 'bfs',
+        text: 'Breadth First Search'
+      }, {
+        label: 'dfs',
+        text: 'Depth First Search'
+      }]
+    };
 }
