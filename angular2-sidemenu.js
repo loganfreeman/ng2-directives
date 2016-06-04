@@ -3,34 +3,22 @@ webpackJsonp([2],{
 /***/ 0:
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
-	function __export(m) {
-	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
-	}
-	var sidemenu_1 = __webpack_require__(415);
-	__export(__webpack_require__(416));
-	__export(__webpack_require__(415));
-	Object.defineProperty(exports, "__esModule", { value: true });
-	exports.default = {
-	    directives: [
-	        sidemenu_1.SIDEMENU_DIRECTIVES
-	    ]
-	};
+	module.exports = __webpack_require__(196);
 
 
 /***/ },
 
-/***/ 415:
+/***/ 87:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var sidemenu_1 = __webpack_require__(416);
+	var sidemenu_1 = __webpack_require__(88);
 	exports.SIDEMENU_DIRECTIVES = [sidemenu_1.SideMenuComponent];
 
 
 /***/ },
 
-/***/ 416:
+/***/ 88:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -44,7 +32,7 @@ webpackJsonp([2],{
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
 	var core_1 = __webpack_require__(4);
-	var capital_first_letter_1 = __webpack_require__(650);
+	var capital_first_letter_1 = __webpack_require__(195);
 	var common_1 = __webpack_require__(10);
 	var SideMenuComponent = (function () {
 	    function SideMenuComponent(element) {
@@ -93,7 +81,7 @@ webpackJsonp([2],{
 
 /***/ },
 
-/***/ 650:
+/***/ 195:
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -123,6 +111,26 @@ webpackJsonp([2],{
 	    return CapitalFirstPipe;
 	}());
 	exports.CapitalFirstPipe = CapitalFirstPipe;
+
+
+/***/ },
+
+/***/ 196:
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	function __export(m) {
+	    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+	}
+	var sidemenu_1 = __webpack_require__(87);
+	__export(__webpack_require__(88));
+	__export(__webpack_require__(87));
+	Object.defineProperty(exports, "__esModule", { value: true });
+	exports.default = {
+	    directives: [
+	        sidemenu_1.SIDEMENU_DIRECTIVES
+	    ]
+	};
 
 
 /***/ }
