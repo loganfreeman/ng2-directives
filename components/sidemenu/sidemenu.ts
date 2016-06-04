@@ -74,12 +74,22 @@ import {NgClass} from 'angular2/common';
   .sidebar-nav button.collapse {
       display: none;
   }
+  i {
+    writing-mode: tb-rl;
+  }
+  .fa-rotate-270 {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
   `],
   template: `
 <div class="sideemnu-wrapper">
   <ul class="sidebar-nav">
       <li class="sidebar-brand" *ngFor="#category of categories">
-        <button class="category" [attr.category]="category" (click)="onCategoryBtnClick(category)"><i class="fa fa-fw fa-caret-down" [ngClass]="{'fa-rotate-270': categoryStateMap[category]}"></i>{{category | capitalFirstLetter}}</button>
+        <button class="category" [attr.category]="category" (click)="onCategoryBtnClick(category)"><i class="fa fa-fw fa-caret-down" [ngClass]="{'fa-rotate-270': !categoryStateMap[category]}">&#9658;</i>{{category | capitalFirstLetter}}</button>
         <button class="indent" *ngFor="#algorithm of data[category]" [attr.algorithm]="algorithm.label" [attr.category]="category" [ngClass]="{collapse: categoryStateMap[category]}">{{algorithm.text}}</button>
       </li>
   </ul>
@@ -107,15 +117,5 @@ export class SideMenuComponent implements OnInit {
     } else {
       this.categoryStateMap[category] = true;
     }
-  }
-  public getCategoryState(category: string): any {
-    return {
-      collapse: this.categoryStateMap[category]
-    };
-  }
-  public getCaretClass(category: string): any {
-    return {
-      'fa-rotate-270': this.categoryStateMap[category]
-    };
   }
 }
