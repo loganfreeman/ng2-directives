@@ -9,17 +9,13 @@ let template = require('./sidemenu-demo.html');
 
 @Component({
   selector: 'sidemenu-demo',
-  styles: [`
-    .sidemenu-wrapper {
-      position: relative;
-    }
-    `],
   template: template,
   directives: [NgClass, CORE_DIRECTIVES, FORM_DIRECTIVES, ButtonCheckbox, SIDEMENU_DIRECTIVES]
 })
 export class SidemenuDemoComponent {
   public sidemenuStyle:any = {
-    height: '1400px'
+    height: '1400px',
+    position: 'relative'
   };
   public categoryMap: { [category: string]: any[]} = {
       sorting: [{

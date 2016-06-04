@@ -57,7 +57,7 @@ const config = {
       'angular2/core',
       'ts-helpers'
     ],
-    'angular2-sidemenu': 'ng2-sidemenu',
+    'angular2-sidemenu': ['ng2-sidemenu'],
     'angular2-sidemenu-demo': 'demo'
   },
 
